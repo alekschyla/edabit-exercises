@@ -6,10 +6,7 @@ function lessThanOrEqualToZero(num) {
 
 // https://edabit.com/challenge/kuzB5CMXiKDEYKXAP
 function isEvenOrOdd(num) {
-    if (num % 2 === 0) {
-        return "even";
-    }
-    return "odd";
+    return num % 2 === 0 ? "even" : "odd";
 }
 
 
@@ -21,29 +18,29 @@ function countWords(str) {
 
 // https://edabit.com/challenge/7JBTN4TbaxJQMdX9W
 function getLastItem(arr) {
-    return arr[arr.length -1];
+    return arr[arr.length - 1];
 }
 
 
 // https://edabit.com/challenge/g66EJsbdnSDayyEcK
 function findSmallestNum(arr) {
-    var num = arr[0];
-    for (let i = 1; i < arr.length; i++ ) {
-        if (num > arr[i]) {
-            num = arr[i];
+    let smallest = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < smallest) {
+            smallest = arr[i];
         }
     }
-    return num;
+    return smallest;
 }
 
 
 // https://edabit.com/challenge/rCmEy2AQYLbRGgKyL
 function getAbsSum(arr) {
-    var score = 0;
+    let sum = 0;
     for (let i = 0; i < arr.length; i++) {
-        score += Math.abs(arr[i]);
+        sum += Math.abs(arr[i]);
     }
-    return score;
+    return sum;
 }
 
 
